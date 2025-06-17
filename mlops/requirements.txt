@@ -1,0 +1,7 @@
+pycaret==3.2
+fastapi
+uvicorn
+pydantic
+mlflow
+pandas
+scikit-learn
