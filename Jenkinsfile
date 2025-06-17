@@ -4,13 +4,13 @@ pipeline {
     stage('Clonar proyecto') {
       steps {
         checkout([$class: 'GitSCM',
-                                                    branches: [[name: '*/main']],
-                                                    userRemoteConfigs: [[
-                                                                url: 'https://github.com/jocas16/jenkins-lab.git',
-                                                                      
-                                                                credentialsId: 'github-token' // 👈 este es el ID que registraste en Jenkins
-                                                            ]]
-                                                        ])
+                                                            branches: [[name: '*/main']],
+                                                            userRemoteConfigs: [[
+                                                                          url: 'https://github.com/jocas16/jenkins-lab.git',
+                                                                                
+                                                                          credentialsId: 'github-token' // 👈 este es el ID que registraste en Jenkins
+                                                                      ]]
+                                                                  ])
         }
       }
 
