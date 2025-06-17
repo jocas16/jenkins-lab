@@ -17,13 +17,13 @@ pipeline {
 
         stage('Instalar dependencias') {
             steps {
-                sh 'pip install -r mlops/requirements.txt'
+                 bat 'pip install -r mlops\\requirements.txt'
             }
         }
 
         stage('Entrenar modelo') {
             steps {
-                sh 'python3 mlops/train_model.py'
+                bat 'python mlops\\train_model.py'
             }
         }
 
